@@ -1,14 +1,41 @@
 .testimonials {
   margin-bottom: 2em;
 
+  @include mq(medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-gap: 1.5em;
+  }
+
   article + article {
     margin-top: 1em;
+
+    @include mq(medium) {
+      margin-top: 0;
+    }
   }
 
   article {
     padding: 2em 1.5em;
     background-color: var(--color-very-dark-magenta);
     border-radius: 8px;
+
+    @include mq(large) {
+      max-height: 200px;
+    }
+
+    &:nth-of-type(2) {
+      @include mq(large) {
+        margin-top: 1em;
+      }
+    }
+
+    &:nth-of-type(3) {
+      @include mq(large) {
+        margin-top: 2em;
+      }
+    }
   }
 
   &__profile {
@@ -43,5 +70,9 @@
     margin-top: 1.5em;
     color: var(--color-light-grayish-magenta);
     line-height: 1.6;
+
+    @include mq(medium) {
+      font-size: 0.82em;
+    }
   }
 }
