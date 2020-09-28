@@ -1,0 +1,44 @@
+.rating {
+  padding: 4em 0 2em;
+
+  &__information {
+    text-align: center;
+    margin-bottom: 2em;
+
+    h2 {
+      font-size: 2em;
+      padding: 0.6em 1em;
+      color: var(--color-very-dark-magenta);
+    }
+
+    p {
+      line-height: 1.6;
+      color: var(--color-dark-grayish-magenta);
+      font-weight: 500;
+    }
+  }
+
+  &__valuation {
+    margin-bottom: 2em;
+
+    div + div {
+      margin-top: 1em;
+    }
+
+    > div {
+      text-align: center;
+      background-color: var(--color-light-grayish-magenta);
+      padding: 1em;
+      border-radius: 8px;
+
+      figure {
+        margin-bottom: 0.75em;
+      }
+      p {
+        color: var(--color-very-dark-magenta);
+        font-weight: 600;
+        font-size: 0.75em;
+      }
+    }
+  }
+}

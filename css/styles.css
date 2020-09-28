@@ -31,4 +31,79 @@ img {
   max-width: 100%;
   height: auto; }
 
+.container {
+  max-width: 92%;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px; } }
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px; } }
+
+.social {
+  background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top, bottom; }
+
+.rating {
+  padding: 4em 0 2em; }
+  .rating__information {
+    text-align: center;
+    margin-bottom: 2em; }
+    .rating__information h2 {
+      font-size: 2em;
+      padding: 0.6em 1em;
+      color: var(--color-very-dark-magenta); }
+    .rating__information p {
+      line-height: 1.6;
+      color: var(--color-dark-grayish-magenta);
+      font-weight: 500; }
+  .rating__valuation {
+    margin-bottom: 2em; }
+    .rating__valuation div + div {
+      margin-top: 1em; }
+    .rating__valuation > div {
+      text-align: center;
+      background-color: var(--color-light-grayish-magenta);
+      padding: 1em;
+      border-radius: 8px; }
+      .rating__valuation > div figure {
+        margin-bottom: 0.75em; }
+      .rating__valuation > div p {
+        color: var(--color-very-dark-magenta);
+        font-weight: 600;
+        font-size: 0.75em; }
+
+.testimonials {
+  margin-bottom: 2em; }
+  .testimonials article + article {
+    margin-top: 1em; }
+  .testimonials article {
+    padding: 2em 1.5em;
+    background-color: var(--color-very-dark-magenta);
+    border-radius: 8px; }
+  .testimonials__profile {
+    display: flex;
+    align-items: center; }
+    .testimonials__profile figure {
+      margin-right: 1.5em; }
+      .testimonials__profile figure img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover; }
+    .testimonials__profile div h3 {
+      color: var(--color-white);
+      font-size: 0.8em;
+      margin-bottom: 0.2em; }
+    .testimonials__profile div span {
+      color: var(--color-soft-pink);
+      font-size: 0.8em;
+      font-weight: 400; }
+  .testimonials__description {
+    margin-top: 1.5em;
+    color: var(--color-light-grayish-magenta);
+    line-height: 1.6; }
+
 /*# sourceMappingURL=styles.css.map */
